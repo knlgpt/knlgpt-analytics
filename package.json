@@ -1,10 +1,15 @@
 {
 	"name": "knlgpt-analytics",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Mixpanel setup",
-	"main": "",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md"
+	],
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc"
 	},
 	"keywords": [
 		"mixpanel",
