@@ -56,11 +56,7 @@ ana_trackPageView("Dashboard");
 
 ## 👨‍💻 Author
 
-- [Your Name](https://github.com/your-github)
+- [knlgpt](https://www.linkedin.com/in/knlgpt/)
 - [Your Website or Portfolio (optional)]
 
 ---
-
-## 📝 License
-
-MIT
