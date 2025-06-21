@@ -21,7 +21,9 @@ npm install knlgpt-analytics
 ```js
 import { initAnalytics } from "knlgpt-analytics";
 
-initAnalytics();
+const MIXPANEL_TOKEN = `your-token`;
+
+await initAnalytics(MIXPANEL_TOKEN);
 ```
 
 ### 2. Track Page View

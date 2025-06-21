@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.analyticsActive = exports.initAnalytics = void 0;
 const mixpanel_react_native_1 = require("mixpanel-react-native");
 let mixpanel = null;
-const initAnalytics = (MIXPANEL_TOKEN, options) => __awaiter(void 0, void 0, void 0, function* () {
+const initAnalytics = (MIXPANEL_TOKEN, options = {}) => __awaiter(void 0, void 0, void 0, function* () {
     const { trackAutomaticEvents = false, useNative = false } = options;
     if (useNative === true) {
         mixpanel = new mixpanel_react_native_1.Mixpanel(MIXPANEL_TOKEN, trackAutomaticEvents, true);

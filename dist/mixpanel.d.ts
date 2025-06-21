@@ -1,4 +1,4 @@
-export declare const initAnalytics: (MIXPANEL_TOKEN: string, options: {
+export declare const initAnalytics: (MIXPANEL_TOKEN: string, options?: {
     trackAutomaticEvents?: boolean;
     useNative?: boolean;
 }) => Promise<void>;

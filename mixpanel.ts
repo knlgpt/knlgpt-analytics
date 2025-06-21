@@ -7,7 +7,7 @@ export const initAnalytics = async (
 	options: {
 		trackAutomaticEvents?: boolean;
 		useNative?: boolean;
-	}
+	} = {}
 ) => {
 	const { trackAutomaticEvents = false, useNative = false } = options;
 
