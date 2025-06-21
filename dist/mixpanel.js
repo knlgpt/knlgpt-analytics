@@ -14,10 +14,12 @@ const mixpanel_react_native_1 = require("mixpanel-react-native");
 let mixpanel = null;
 const initAnalytics = (MIXPANEL_TOKEN, options) => __awaiter(void 0, void 0, void 0, function* () {
     const { trackAutomaticEvents = false, useNative = false } = options;
-    // create new Mixpanel class ̰
-    mixpanel = new mixpanel_react_native_1.Mixpanel(MIXPANEL_TOKEN, trackAutomaticEvents, useNative);
-    // initialize Mixpanel
-    yield mixpanel.init();
+    if (useNative === true) {
+        mixpanel = new mixpanel_react_native_1.Mixpanel(MIXPANEL_TOKEN, trackAutomaticEvents, true);
+    }
+    else {
+        mixpanel = new mixpanel_react_native_1.Mixpanel(MIXPANEL_TOKEN, trackAutomaticEvents, false);
+    }
 });
 exports.initAnalytics = initAnalytics;
 const analyticsActive = () => {
