@@ -11,11 +11,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.analyticsActive = exports.initAnalytics = void 0;
 const mixpanel_react_native_1 = require("mixpanel-react-native");
-const MIXPANEL_TOKEN = "66df4114d4eca0e36a6963b4182b1289";
 let mixpanel = null;
-const initAnalytics = () => __awaiter(void 0, void 0, void 0, function* () {
-    const trackAutomaticEvents = false; //disable legacy mobile autotrack
-    const useNative = false; //disable Native Mode, use Javascript Mode
+const initAnalytics = (MIXPANEL_TOKEN, options) => __awaiter(void 0, void 0, void 0, function* () {
+    const { trackAutomaticEvents = false, useNative = false } = options;
     // create new Mixpanel class ̰
     mixpanel = new mixpanel_react_native_1.Mixpanel(MIXPANEL_TOKEN, trackAutomaticEvents, useNative);
     // initialize Mixpanel

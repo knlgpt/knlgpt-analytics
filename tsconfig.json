@@ -116,5 +116,5 @@
 		"strict": true,
 		"esModuleInterop": true
 	},
-	"include": ["lib"]
+	"include": ["lib", "analytics.ts", "index.ts", "mixpanel.ts"]
 }
